@@ -103,9 +103,6 @@ public class Injector {
     }
 
     public void createUI() {
-        Visitor visitor = new Visitor("Олег", 1, "1234", new Date(2000, 8,
-                21), false);
-        
         MainWindow mainWindow = new MainWindow();
 
         RatingWindow ratingWindow = new RatingWindow();
