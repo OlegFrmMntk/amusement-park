@@ -1,6 +1,5 @@
 package View;
 
-import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -9,7 +8,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class AttractionsWindow extends Application {
+public class AttractionsWindow {
 
     public RatingWindow ratingWindow;
 
@@ -57,8 +56,4 @@ public class AttractionsWindow extends Application {
 
     }
 
-    @Override
-    public void start(Stage stage) throws Exception {
-        show();
-    }
 }

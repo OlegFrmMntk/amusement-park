@@ -1,6 +1,5 @@
 package View;
 
-import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -9,7 +8,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class DiscountsWindow extends Application {
+public class DiscountsWindow {
 
     public void show() {
 
@@ -50,10 +49,5 @@ public class DiscountsWindow extends Application {
 
     public void exit() {
 
-    }
-
-    @Override
-    public void start(Stage stage) throws Exception {
-        show();
     }
 }

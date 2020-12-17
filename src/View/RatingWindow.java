@@ -1,6 +1,5 @@
 package View;
 
-import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -11,14 +10,8 @@ import javafx.stage.Stage;
 
 import javax.swing.*;
 
-public class RatingWindow extends Application {
+public class RatingWindow {
 
-    public Button enterButton;
-    public Button exitButton;
-
-    public TextField commentInput;
-
-    HBox rates;
 
     public void show() {
 
@@ -26,7 +19,7 @@ public class RatingWindow extends Application {
         root.setPadding(new Insets(20, 20, 50, 20));
 
         Label comment = new Label("Комментарий:");
-        commentInput = new TextField();
+        TextField commentInput = new TextField();
         commentInput.setMinHeight(100);
 
 
@@ -36,13 +29,13 @@ public class RatingWindow extends Application {
         RadioButton rate4 = new RadioButton("4");
         RadioButton rate5 = new RadioButton("5");
 
-        rates = new HBox(rate1, rate2, rate3, rate4, rate5);
+        HBox rates = new HBox(rate1, rate2, rate3, rate4, rate5);
         rates.setSpacing(20);
 
-        enterButton = new Button("Ввод");
+        Button enterButton = new Button("Ввод");
         enterButton.setMinWidth(130);
 
-        exitButton = new Button("Выход");
+        Button exitButton = new Button("Выход");
         exitButton.setMinWidth(130);
 
         VBox buttons = new VBox(comment, commentInput, rates, new HBox(enterButton, exitButton));
@@ -67,8 +60,4 @@ public class RatingWindow extends Application {
 
     }
 
-    @Override
-    public void start(Stage stage) throws Exception {
-        show();
-    }
 }

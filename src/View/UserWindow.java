@@ -1,6 +1,5 @@
 package View;
 
-import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -8,7 +7,7 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class UserWindow extends Application {
+public class UserWindow {
 
     public AttractionsWindow attractionsWindow;
     public RestPlacesWindow restPlacesWindow;
@@ -65,8 +64,4 @@ public class UserWindow extends Application {
 
     }
 
-    @Override
-    public void start(Stage stage) throws Exception {
-        show();
-    }
 }

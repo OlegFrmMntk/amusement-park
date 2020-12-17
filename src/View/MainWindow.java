@@ -1,6 +1,5 @@
 package View;
 
-import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -11,7 +10,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class MainWindow extends Application {
+public class MainWindow {
 
     public UserWindow userWindow;
     public AdministratorWindow administratorWindow;
@@ -54,8 +53,4 @@ public class MainWindow extends Application {
 
     }
 
-    @Override
-    public void start(Stage stage) throws Exception {
-        show();
-    }
 }

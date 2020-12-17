@@ -103,6 +103,7 @@ public class Injector {
     }
 
     public void createUI() {
+
         MainWindow mainWindow = new MainWindow();
 
         RatingWindow ratingWindow = new RatingWindow();
