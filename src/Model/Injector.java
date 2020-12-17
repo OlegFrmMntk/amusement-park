@@ -133,7 +133,7 @@ public class Injector {
         administratorWindow.editVisitorWindow = editVisitorWindow;
         mainWindow.administratorWindow = administratorWindow;
 
-        editVisitorWindow.show();
+        mainWindow.show();
     }
 
 }
